@@ -1,0 +1,99 @@
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('NeueHaasUnicaPro-Light.woff2') format('woff2'),
+        url('NeueHaasUnicaPro-Light.woff') format('woff'),
+        url('NeueHaasUnicaPro-Light.ttf') format('truetype'),
+        url('NeueHaasUnicaPro-Light.svg#NeueHaasUnicaPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('NeueHaasUnicaPro-Italic.woff2') format('woff2'),
+        url('NeueHaasUnicaPro-Italic.woff') format('woff'),
+        url('NeueHaasUnicaPro-Italic.ttf') format('truetype'),
+        url('NeueHaasUnicaPro-Italic.svg#NeueHaasUnicaPro-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('NeueHaasUnicaPro-Regular.woff2') format('woff2'),
+        url('NeueHaasUnicaPro-Regular.woff') format('woff'),
+        url('NeueHaasUnicaPro-Regular.ttf') format('truetype'),
+        url('NeueHaasUnicaPro-Regular.svg#NeueHaasUnicaPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Light.woff2') format('woff2'),
+        url('Poppins-Light.woff') format('woff'),
+        url('Poppins-Light.ttf') format('truetype'),
+        url('Poppins-Light.svg#Poppins-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Medium.woff2') format('woff2'),
+        url('Poppins-Medium.woff') format('woff'),
+        url('Poppins-Medium.ttf') format('truetype'),
+        url('Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Thin.woff2') format('woff2'),
+        url('Poppins-Thin.woff') format('woff'),
+        url('Poppins-Thin.ttf') format('truetype'),
+        url('Poppins-Thin.svg#Poppins-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Neue Haas Unica Pro';
+    src: url('NeueHaasUnicaPro-Bold.woff2') format('woff2'),
+        url('NeueHaasUnicaPro-Bold.woff') format('woff'),
+        url('NeueHaasUnicaPro-Bold.ttf') format('truetype'),
+        url('NeueHaasUnicaPro-Bold.svg#NeueHaasUnicaPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Baskerville';
+    src: url('BaskervilleOld-Serial-Bold.woff2') format('woff2'),
+        url('BaskervilleOld-Serial-Bold.woff') format('woff'),
+        url('BaskervilleOld-Serial-Bold.ttf') format('truetype'),
+        url('BaskervilleOld-Serial-Bold.svg#BaskervilleOld-Serial-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('Poppins-Regular.woff2') format('woff2'),
+        url('Poppins-Regular.woff') format('woff'),
+        url('Poppins-Regular.ttf') format('truetype'),
+        url('Poppins-Regular.svg#Poppins-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

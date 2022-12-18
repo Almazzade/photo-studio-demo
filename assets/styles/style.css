@@ -1,0 +1,283 @@
+p,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: unset;
+}
+
+body {
+  background-color: #252525;
+  min-height: 10000px;
+}
+
+.sectionTitle {
+  margin: 140px 0 70px;
+  color: #3354F4;
+  font-size: 50px;
+  line-height: 63px;
+  font-family: "Neue Haas Unica Pro";
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+#wallpaperSection {
+  height: 85vh;
+  position: relative;
+  padding: 50px 0;
+}
+#wallpaperSection > img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+#wallpaperSection .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#wallpaperSection header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+@media screen and (min-width: 768px) {
+  #wallpaperSection header {
+    justify-content: space-between;
+  }
+}
+#wallpaperSection header img {
+  width: 46px;
+}
+#wallpaperSection header ul {
+  display: none;
+  font-family: "Neue Haas Unica Pro";
+  font-weight: 300;
+}
+@media screen and (min-width: 768px) {
+  #wallpaperSection header ul {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1440px) {
+  #wallpaperSection header ul {
+    grid-gap: 115px;
+  }
+}
+#wallpaperSection header ul li {
+  list-style-type: none;
+}
+#wallpaperSection header ul li a {
+  color: white;
+}
+#wallpaperSection article {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+#wallpaperSection article p {
+  font-family: "Baskerville";
+  font-size: 60px;
+  line-height: 63px;
+  color: white;
+  letter-spacing: 0.01em;
+}
+#wallpaperSection article a {
+  color: #3354F4;
+  font-weight: 400;
+  font-family: "Neue Haas Unica Pro";
+  font-size: 16px;
+  line-height: 63px;
+  background-image: url("../images/get_in_touch_border.svg");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 15px 35px;
+}
+
+#servicesSection .serviceCard {
+  font-family: "Poppins";
+  letter-spacing: 0.01em;
+  color: white;
+}
+#servicesSection .serviceCard .title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+#servicesSection .serviceCard img {
+  aspect-ratio: 387/237;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin: 17px 0 34px;
+}
+#servicesSection .serviceCard .content {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+#servicesSection .owl-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35px;
+}
+#servicesSection .owl-nav button.disabled {
+  display: none;
+}
+#servicesSection .owl-nav button.owl-next {
+  margin-left: auto;
+}
+
+#portfolioSection .portfolioBox {
+  display: grid;
+  grid-gap: 20px;
+}
+@media screen and (min-width: 768px) {
+  #portfolioSection .portfolioBox {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (min-width: 1200px) {
+  #portfolioSection .portfolioBox {
+    display: flex;
+    grid-gap: unset;
+    grid-template-columns: unset;
+    gap: 20px;
+  }
+}
+#portfolioSection .portfolioBox .portfolioItem .layout {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.25) 50%, rgba(0, 0, 0, 0.6) 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center;
+  color: white;
+  font-family: "Poppins";
+  padding: 20px 35px;
+  letter-spacing: 0.01em;
+  transition: 0.4s;
+  opacity: 0;
+  transition-delay: 0s;
+}
+#portfolioSection .portfolioBox .portfolioItem .layout h5 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+#portfolioSection .portfolioBox .portfolioItem .layout p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+@media screen and (max-width: 1199.98px) {
+  #portfolioSection .portfolioBox .portfolioItem {
+    width: 100%;
+    aspect-ratio: 3/4;
+    position: relative;
+  }
+  #portfolioSection .portfolioBox .portfolioItem img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  #portfolioSection .portfolioBox .portfolioItem {
+    width: 25%;
+    position: relative;
+    height: 800px;
+    transition: 0.4s;
+    filter: grayscale(0%);
+  }
+  #portfolioSection .portfolioBox .portfolioItem img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center;
+    top: 0;
+    left: 0;
+  }
+  #portfolioSection .portfolioBox .portfolioItem.active {
+    width: 49%;
+  }
+  #portfolioSection .portfolioBox .portfolioItem.active .layout {
+    transition-delay: 0.4s;
+  }
+  #portfolioSection .portfolioBox .portfolioItem.deactive {
+    width: 17%;
+    filter: grayscale(100%);
+  }
+}
+#portfolioSection .portfolioBox .portfolioItem.active .layout {
+  opacity: 1;
+}
+
+#aboutUsSection .aboutUsBox {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 992px) {
+  #aboutUsSection .aboutUsBox {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+#aboutUsSection .aboutUsBox img {
+  aspect-ratio: 692/582;
+}
+#aboutUsSection .aboutUsBox p {
+  font-family: "Poppins";
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: white;
+}
+@media screen and (min-width: 1200px) {
+  #aboutUsSection .aboutUsBox p {
+    width: 390px;
+    max-width: 100%;
+  }
+}
+#aboutUsSection .aboutUsBox p a {
+  color: #3354F4;
+}/*# sourceMappingURL=style.css.map */

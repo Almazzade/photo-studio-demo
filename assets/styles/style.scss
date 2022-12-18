@@ -10,6 +10,7 @@ h4,
 h5,
 h6 {
     margin: 0;
+    padding: 0;
 }
 
 a {
@@ -19,7 +20,7 @@ a {
 
 body {
     background-color: #252525;
-    min-height: 10000px;
+    color: white;
 }
 
 .sectionTitle {
@@ -309,5 +310,256 @@ body {
                 color: $blue;
             }
         }
+    }
+
+    .countBox {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 20px;
+
+        @media screen and (min-width: 768px) {
+            margin-top: 70px;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .countItem {
+            h5 {
+                font-family: 'Poppins';
+                font-weight: 300;
+                font-size: 50px;
+                line-height: 75px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                color: $blue;
+                margin-bottom: 15px;
+            }
+
+            p {
+                font-family: 'Neue Haas Unica Pro';
+                font-style: italic;
+                font-weight: 400;
+                font-size: 30px;
+                line-height: 35px;
+                text-align: center;
+                letter-spacing: 0.01em;
+                color: white;
+
+                @media screen and (min-width: 1200px) {
+                    font-size: 50px;
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+}
+
+#studioSection {
+    .owl-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 35px 0;
+
+        @media screen and (min-width: 768px) {
+            margin: 65px 0;
+        }
+
+        button {
+            &.disabled {
+                display: none;
+            }
+
+            &.owl-next {
+                margin-left: auto;
+            }
+        }
+    }
+
+    .studio-carousel-item {
+        width: 100%;
+
+        @media screen and (min-width: 1200px) {
+            width: 895px;
+        }
+
+        img {
+            aspect-ratio: 895/502;
+            object-fit: cover;
+        }
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 30px;
+        letter-spacing: 0.03em;
+        width: 895px;
+        max-width: 100%;
+
+        a {
+            color: $blue;
+        }
+    }
+}
+
+#testimonialSection {
+    margin: 90px 0;
+
+    @media screen and (min-width: 1200px) {
+        margin: 190px 0;
+    }
+
+    h6 {
+        font-family: 'Neue Haas Unica Pro';
+        font-style: normal;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.03em;
+        line-height: 1.1;
+        font-size: 45px;
+        position: relative;
+        display: inline-block;
+
+        @media screen and (min-width: 768px) {
+            font-size: 70px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            font-size: 90px;
+        }
+
+        &::before,
+        &::after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 80px;
+            position: absolute;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            opacity: .3;
+        }
+
+        &::before {
+            background-image: url("../images/tickle-top.svg");
+            top: -30px;
+            left: 30px;
+        }
+
+        &::after {
+            background-image: url("../images/tickle-bottom.svg");
+            bottom: -60px;
+            right: -60px;
+        }
+
+        i {
+            font-weight: 400;
+        }
+
+        span {
+            display: inline-block;
+            position: relative;
+
+            &::before {
+                position: absolute;
+                width: 140%;
+                height: 140%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: url("../images/blue-border.svg") no-repeat center center;
+
+                @media screen and (min-width: 1200px) {
+                    content: '';
+                }
+            }
+        }
+    }
+
+    small {
+        font-family: 'Neue Haas Unica Pro';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 63px;
+        margin-top: 30px;
+        display: block;
+    }
+}
+
+footer {
+    border-top: 1px solid rgba($color: #f5f5f5, $alpha: .3);
+}
+
+#footer {
+    padding: 30px 0;
+
+    @media screen and (min-width: 768px) {
+        padding: 60px 0;
+    }
+
+    h5 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 30px;
+        letter-spacing: 0.05em;
+        margin-bottom: 15px;
+    }
+
+    ul {
+        li {
+            font-family: 'Poppins';
+            font-weight: 300;
+            font-size: 16px;
+            line-height: 30px;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            color: rgba($color: #f5f5f5, $alpha: .3);
+            list-style-type: none;
+            margin-bottom: 15px;
+        }
+    }
+
+    form {
+
+        input,
+        textarea {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid rgba($color: #f5f5f5, $alpha: .3);
+            padding: 12px 0;
+            outline: none;
+            color: #f5f5f5;
+            width: 100%;
+        }
+
+        input {
+            margin-bottom: 25px;
+        }
+
+        textarea {
+            resize: none;
+        }
+    }
+
+    button {
+        color: $blue;
+        font-weight: 400;
+        font-family: 'Neue Haas Unica Pro';
+        font-size: 16px;
+        line-height: 63px;
+        background-image: url('../images/get_in_touch_border.svg');
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 15px 35px;
+        background-color: transparent;
+        border: unset;
     }
 }
